@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Js Learning Day 2</title>
+
+     <script>
+        async function loadAll(){
+              try{
+              let response = await fetch("http://localhost:1010/api/foodlist/&quot;");
+              let foods = await response.json();
+              console.log(foodList);
+              }
+              catch(error){
+                  if(error) {
+                      console.log(error);
+                  }
+              }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="loadAll()">Load all Foods</button>
+</body>
+</html>

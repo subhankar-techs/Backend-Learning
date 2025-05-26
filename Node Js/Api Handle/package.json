@@ -1,0 +1,19 @@
+{
+  "name": "firstapp.js",
+  "version": "1.0.1",
+  "description": "FirstApp",
+  "repository": {
+    "type": "git",
+    "url": "git remote add origin https://github.com/subhankar-techs/node-practice.git"
+  },
+  "license": "GPL-3.0-or-later",
+  "author": "Subhankar Manna",
+  "type": "commonjs",
+  "main": "test1.js",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3000"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
